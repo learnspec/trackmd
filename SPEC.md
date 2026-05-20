@@ -92,6 +92,8 @@ TrackMD does not directly import leaf formats (DiagramMD, MediaMD, GlossaryMD) �
 ---
 title: "Learning Python"                      # optional — inferred from the first # H1
 lang: en                                       # REQUIRED — BCP-47 code
+description: "A complete beginner's path to Python: variables, control flow, data structures, functions, and a final project."
+                                               # optional — short summary for catalogues and previews
 estimated_time: 10h                            # optional — total estimated track duration
 level: beginner                                # optional — beginner | intermediate | advanced
 target_audience: "Beginners with no programming experience"  # optional
@@ -120,6 +122,7 @@ on_completion:                                 # optional — rewards on complet
 |---|---|---|
 | `title` | No | Track title — inferred from `# H1` if absent |
 | `lang` | **Yes** | BCP-47 code (`en`, `fr`, `en-US`…) |
+| `description` | No | Short plain-text summary (typically 1–3 sentences) — used for catalogues, link previews, and `<meta name="description">`. Distinct from `title` and from `target_audience` (which describes *who* the track is for, not *what* it covers). |
 | `tags` | No | Thematic tags |
 | `author` | No | Track author |
 | `created` | No | Creation date, ISO 8601 |
@@ -182,6 +185,7 @@ If neither the TrackMD nor the QuizMD defines a `passing_score`, no score thresh
 ---
 title: "Learning Python — Beginner Track"
 lang: en
+description: "An end-to-end beginner track covering Python from first variables to a working final project."
 estimated_time: 8h
 level: beginner
 target_audience: "Anyone who wants to learn programming with no prior experience"
