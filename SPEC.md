@@ -70,7 +70,8 @@ A Level 0 TrackMD file is a table of contents: `##` sections grouping `!import` 
 | `!import ./file.learn.md` | Educational content step |
 | `!import ./file.quiz.md` | Assessment step |
 | `!import ./file.flash.md` | Flashcard review step |
-| `!ref ./file.media.md` | Declare a MediaMD context |
+| `!ref ./file.media.md` | Declare an additional MediaMD context (the collection's `stock.media.md` is implicit — see *MediaMD §Default Reference Convention*) |
+| `!ref ./file.diagram.md` | Declare an additional DiagramMD context (the collection's `stock.diagram.md` is implicit — see *DiagramMD §Default Reference Convention*) |
 | `!ref ./file.glossary.md` | Declare a GlossaryMD context |
 | `!checkpoint id:slug` | Track-level progress checkpoint |
 
